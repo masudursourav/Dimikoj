@@ -1,0 +1,39 @@
+//*[৫২ সমস্যা বই] স্বরবর্ণ-ব্যাঞ্জনবর্ণ
+#include<bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+#define mp make_pair
+#define pb push_back
+
+void input(){freopen("input.txt", "r", stdin);freopen("output.txt", "w", stdout);}
+
+void slove(){
+  string s,ansv="",ansc="";
+  getline(cin,s);
+  for(int i=0;i<s.size();i++){
+    if(s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u' ||
+       s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U'){
+         ansv+=s[i];
+       }
+    else if((s[i]>='a' && s[i]<='z')||(s[i]>='A' && s[i]<='Z')){
+      ansc+=s[i];
+    }
+  }
+  cout<<ansv<<"\n"<<ansc<<"\n";
+
+}
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+         ll t=1; cin>>t;
+         cin.ignore();
+         while(t--){
+           slove();
+         }
+
+    return 0;
+}
